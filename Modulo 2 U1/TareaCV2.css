@@ -1,0 +1,28 @@
+.caja {
+     width: 190px;
+     height: 150px;
+    padding: 20px;
+    background-color: lightpink;
+    box-shadow: 10px -10px 5px khaki;
+    border-radius:  25px;
+}
+
+.caja2 {
+    width: 190px;
+    height: 150px;
+    padding: 20px;
+    background-color: khaki;
+    box-shadow: 10px 10px 5px lightpink;
+    border-radius:  25px;
+}
+
+.texto p {
+    background-color: coral;
+    column-count: 2;
+    column-gap: 50px;
+    }
+
+    h1{
+        font-family: "Honk", system-ui;
+        font-size: 50px;
+    }
