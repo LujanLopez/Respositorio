@@ -1,0 +1,160 @@
+/* acá empieza el cambio de imagenes*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.cointaimer-fluid {
+    font-size: 200%;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.slider::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: dodgerblue;
+}
+
+.slider::before {
+    top: 0;
+}
+
+.slider::after {
+    bottom: 0;
+}
+
+.slides {
+    display: flex;
+    animation: slide 20s infinite;
+    /* Cambia la imagen cada 12 segundos */
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slide img {
+    width: 50%;
+    height: auto;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked~.slides {
+    animation-play-state: paused; /*cambia el comando del movimiento de las fotos*/
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-100%);
+    }
+
+    60% {
+        transform: translateX(-200%);
+    }
+
+    85% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.button.active {
+    color: blue;
+}
+
+
+.text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-container {
+    background-color: gray;
+    padding: 20px;
+    text-align: center;
+}
+
+.text-container h1 {
+    font-size: 32px;
+    color: blue;
+}
+
+.text-container p {
+    font-size: 20px;
+    color: black;
+}
+
+.text-container2 {
+    text-align: center;
+    margin-top: 10vh;
+    transform: translateY(-50%);
+}
+
+.black-container {
+    background-color: black;
+    color: rgb(238, 238, 238);
+    padding: 200px;
+    border-radius: 60px;
+}
+
+.black-container h2 {
+    color: rgb(236, 236, 236);
+}
+
+.black-container p {
+    color: rgb(26, 124, 223)
+}
