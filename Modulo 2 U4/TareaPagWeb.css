@@ -57,7 +57,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked~.slides {
-    animation-play-state: paused; /*cambia el comando del movimiento de las fotos*/
+    animation-play-state: running; /*cambia el comando del movimiento de las fotos*/
 }
 
 @keyframes slide {

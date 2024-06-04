@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer ejercicio javascript</title>
+</head>
+
+<body>
+    <script>
+        function determinarTransporte(distancia) {
+            if (distancia <= 1000) {
+                return "pie";
+            } else if (distancia <= 10000) {
+                return "bicicleta";
+            } else if (distancia <= 30000) {
+                return "colectivo";
+            } else if (distancia <= 100000) {
+                return "auto";
+            } else {
+                return "avion";
+            }
+        }
+        let distancia = prompt("Ingresa la distancia en metros:");
+        distancia = parseFloat(distancia);
+
+        if (!isNaN(distancia)) {
+            let transporte = determinarTransporte(distancia);
+            alert(`El medio de transporte apropiado para ${distancia} metros es: ${transporte}`);
+        } else {
+            alert("Por favor, ingresa un número válido.");
+        }
+    </script>
+</body>
+
+</html>
