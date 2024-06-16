@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Colores de Fondo</title>
+    <style>
+        .square {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #square1 { background-color: coral; }
+        #square2 { background-color: olive; }
+        #square3 { background-color: skyblue; }
+    </style>
+</head>
+<body>
+    <div id="square1" class="square"></div>
+    <div id="square2" class="square"></div>
+    <div id="square3" class="square"></div>
+
+    <script>
+        document.getElementById('square1').addEventListener('click', function() {
+            document.body.style.backgroundColor = 'coral';
+        });
+        document.getElementById('square2').addEventListener('click', function() {
+            document.body.style.backgroundColor = 'olive';
+        });
+        document.getElementById('square3').addEventListener('click', function() {
+            document.body.style.backgroundColor = 'skyblue';
+        });
+    </script>
+</body>
+</html>
